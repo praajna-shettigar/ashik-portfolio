@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Ashik Shetty</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top animated-header">
+          <a class="navbar-brand" href="#">Ashik Shetty</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+  <section id="home" class="section">
+    <div class="container text-center">
+      <!-- <h1>Welcome to My Portfolio</h1> -->
+      <!-- <p>This is a simple portfolio website.</p> -->
+      <div class="profile-img">
+        <img src="./photos/profile.jpeg" alt="Your Photo" class="rounded-circle">
+      </div>
+
+      <div class="text">
+        <span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3 animated-text">I'm <span>Ashik Shetty</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation" class="animated-text"></span>
+                        <script>
+
+                            // Initialize the typing animation
+                            const typingAnimationElement = document.getElementById('typing-animation');
+    
+                            // Create an array of typing text
+                            const typingTexts = [
+                            'Singer  ',
+                            'Dancer  ',
+                            'Photographer   ',
+                            ];
+    
+                            // Create a function to display the typing animation for a given text
+                            function playTypingAnimation(text) {
+                            // Loop through each character and add it to the element
+                            for (let i = 0; i < text.length; i++) {
+                                setTimeout(() => {
+                                typingAnimationElement.textContent += text[i];
+                                }, i * 200); // Increase the delay to slow down the typing animation
+                            }
+    
+                            // Once the animation is complete, reset the text and start over
+                            setTimeout(() => {
+                                typingAnimationElement.textContent = '';
+                                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                            }, text.length * 200);
+                            }
+    
+                            // Start the typing animation loop
+                            playTypingAnimation(typingTexts[0]);
+    
+                            </script>
+      </div>
+      
+  
+
+
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h3 style="color: rgb(68, 225, 225);">About Me</h3>
+      <p>Welcome to my world of music! I am Ashik Shetty, a passionate singer and musician. Ever since I can remember, music has been the driving force in my life. It's not just a hobby or a career path for me; it's the very essence of my being. I find solace in the harmonies, joy in the rhythms, and a profound sense of connection when I'm lost in a song.</p>
+      <p></p>
+      <p></p>
+      <p>Join me on this musical journey as we explore the boundless realms of sound and creativity. Together, let's create moments that linger in the hearts and minds of all who listen.</p>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="container">
+      <h3 class="section-title" style="color: rgb(68, 225, 225);">Services</h3>
+      <div class="row">
+        <div class="col-lg-4" style="margin-top: 10px;margin-bottom: 10px;">
+          <div class="service-item">
+            <!-- <i class="fas fa-microphone"></i> -->
+            <h3 class="service-title">Live Singing Performances</h3>
+            <p class="service-description">I offer captivating live singing performances for various events and occasions. From weddings and parties to corporate functions, I can create a memorable musical experience.</p>
+          </div>
+        </div>
+        <div class="col-lg-4" style="margin-top: 10px;margin-bottom: 10px;">
+          <div class="service-item">
+            <!-- <i class="fas fa-music"></i> -->
+            <h3 class="service-title">Event Entertainment</h3>
+            <p class="service-description">Looking for exceptional entertainment for your event? Hire me to entertain your guests with my versatile vocal range. I can tailor my performance to suit the ambiance and theme of your event.</p>
+          </div>
+        </div>
+        <div class="col-lg-4" style="margin-top: 10px;margin-bottom: 10px;">
+          <div class="service-item">
+            <!-- <i class="fas fa-microphone-alt"></i> -->
+            <h3 class="service-title">Collaborations</h3>
+            <p class="service-description">Are you a musician, band, or producer seeking a talented vocalist for collaborations? I'm open to collaborative projects and can lend my vocals to create beautiful music across various genres.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <section id="contact">
+    <div class="container">
+      <h3 class="section-title" style="color: rgb(68, 225, 225);">Contact</h3>
+  
+      <div class="row d-flex contact-info mb-5 justify-content-center">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate  justify-content-center">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </div>
+            <!-- <div class="align-items-center col-md-6 col-lg-3"> -->
+                <h5 class="mb-4" style="color: rgb(242, 137, 196);">Address</h5>
+            <p class="mb-4">Bengaluru, India</p>
+            <!-- </div> -->
+            
+          </div>
+        </div>
+        <!-- Similarly for other contact information -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-flip" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+                  </svg>
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+              </div>
+              <h5 class="mb-4" style="color: rgb(242, 137, 196);">Phone</h5>
+              <p>8971578198</p>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+              </div>
+              <h5 class="mb-4" style="color: rgb(242, 137, 196);">Email</h5>
+              <p>ashikshettymusical@gmail.com</p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate justify-content-center">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                  </svg>
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+              </div>
+              <h5 class="mb-4" style="color: rgb(242, 137, 196);">Resume</h5>
+              <a href="#">Resume Link</a>
+            </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+                <li class="ftco-animate normal-txt" style="color: white; margin-right: 10px;">Find me on </li>
+                
+                <a href="https://www.facebook.com/ashik.shetty.102?mibextid=LQQJ4d" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/ashikshetty" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/ashikshetty__?igsh=MXd1djNjNWpzN2RlOQ%3D%3D&utm_source=qr" class="fa fa-instagram"></a>
+                <a href="https://www.snapchat.com/add/ashikshetty093?share_id=PQd0a3mSRGyVkvgiMD35HA&locale=en_IN" class="fa fa-snapchat-ghost"></a>
+                <!-- <a href="#" class="fa fa-google"></a> -->
+    
+              </ul>
+          </div>
+         
+          
+          <br>  
+          <!-- <div class="text-center">
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on </li>
+              <li class="ftco-animate"><a href="#" class="fa fa-facebook"></a></li>
+              <li class="ftco-animate"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M7.955 1.054c-.665-.045-3.955-.04-4.955 0-1.218.086-2.197.815-2.738 1.571C.153 3.992 0 5.567 0 8s.153 4.008.262 5.375c.54.756 1.52 1.485 2.738 1.571 1 .04 4.29.046 4.955 0 1.218-.086 2.197-.815 2.738-1.571C15.847 12.008 16 10.433 16 8s-.153-4.008-.262-5.375c-.54-.756-1.52-1.485-2.738-1.571-1-.04-4.29-.045-4.955 0zM6 10.5V5.465L10.453 8 6 10.5z"/>
+          </svg></a></li>
+              <li class="ftco-animate"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 1.25a6.75 6.75 0 0 1 6.75 6.75c0 3.715-3.035 6.75-6.75 6.75S1.25 11.715 1.25 8A6.75 6.75 0 0 1 8 1.25zm0 1.583a5.167 5.167 0 0 0-5.167 5.167 5.167 5.167 0 0 0 5.167 5.167 5.167 5.167 0 0 0 5.167-5.167A5.167 5.167 0 0 0 8 2.833zM8 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.273-.23a.75.75 0 1 1-.985-.898 3.5 3.5 0 0 0 1.86-2.214.75.75 0 0 1 1.464.38 5 5 0 0 1-2.34 3.732zm-8.546 0a5 5 0 0 1-2.34-3.732.75.75 0 1 1 1.464-.38 3.5 3.5 0 0 0 1.86 2.214.75.75 0 1 1-.985.898z"/>
+          </svg></a></li>
+            </ul>
+            </div> -->
+
+                
+          
+
+
+      </div>
+    </div>
+  </section> 
+  
+
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; Made With Love❤️ By Praajna Shettigar</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
